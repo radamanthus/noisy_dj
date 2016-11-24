@@ -1,24 +1,11 @@
-# README
+# noisy_dj
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a minimalist Rails application created to test DelayedJob on Engine Yard Cloud.
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+To generate 100 jobs:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+ECHO_JOB_COUNT=100 bundle exec rake echo:generate
+```
